@@ -1,0 +1,15 @@
+R1 <- 0
+R1 <- [MAR]
+MAR <- 1
+R2 <- [MAR]
+MAR <- R1
+SWAP: R3 <- [MAR]
+LOOP: R2 <- R2 --
+BUS <- R2, BuZy END
+R1 <- R1 ++
+MAR <- R1
+R4 <- [MAR]
+R5 <- R3 - R4
+BUS <- R5, BS SWAP
+NOOP, BUN LOOP
+END: BUS <- R3, BUN END

@@ -1,0 +1,12 @@
+MAR<-0 // comment
+R1<-[MAR]
+MAR<-1
+R3<-[MAR]
+R2<-0
+R2<-R2+1
+LOOP:R1<-R1-1, BZ END
+R2<-R2+1
+MAR<-R2
+R4<-[MAR]
+R3<-R3+R4, BUN LOOP
+END:OUTPUT<-R3, BUN END
